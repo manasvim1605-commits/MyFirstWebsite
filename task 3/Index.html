@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cold Coffee Delight</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Cold Coffee Delight </h1>
+    <p>Your perfect refreshing drink!</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#ingredients">Ingredients</a>
+    <a href="#recipe">Recipe</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<main>
+
+    <!-- Hide/Show Button -->
+    <button class="toggleBtn" data-target="about">Hide About</button>
+    <section id="about">
+        <h2>About Cold Coffee</h2>
+        <p>Cold coffee is a smooth and refreshing drink made with coffee, milk, sugar, and ice.
+Cold coffee isn’t just a drink… it’s a whole personality.
+It’s for the people who want caffeine and chill, who like their coffee as cool as their attitude and as sweet as their mood on a good day.
+
+It’s the magical potion that turns “I can’t do this” into “Okay fine, let’s survive.”
+Every sip feels like a tiny hug, a mini-vacation, or that one friend who always says, “Don’t worry, you got this.”
+
+Cold coffee understands you.
+It doesn’t judge your deadlines, your laziness, or your habit of checking the fridge for no reason.
+It simply sits there—creamy, frothy, adorable—and makes you feel like life is 2% easier and 98% tastier.
+So yes… for coffee lovers, cold coffee is not just a beverage.
+
+It’s comfort, comedy, and caffeine—all in one cute, chilly cup.
+</p>
+    </section>
+
+    <button class="toggleBtn" data-target="ingredients">Hide Ingredients</button>
+    <section id="ingredients">
+        <h2>Ingredients</h2>
+        <img src="C:\Users\Manasvi M. Mandhare\Desktop\Task 3\coffee beans.jpg" alt="Cold Coffee">
+        <img src="C:\Users\Manasvi M. Mandhare\Desktop\Task 3\iced-coffee-with-toasted-marshmallow-photo.jpg" alt="Cold Coffee">
+        <img src="C:\Users\Manasvi M. Mandhare\Desktop\Task 3\cold coffee.jpg" alt="Cold Coffee">
+        <ul>
+            <li>1 cup cold milk</li>
+            <li>2 tsp instant coffee</li>
+            <li>2 tsp sugar</li>
+            <li>Ice cubes</li>
+            <li>Vanilla ice cream (optional)</li>
+        </ul>
+    </section>
+
+    <button class="toggleBtn" data-target="recipe">Hide Recipe</button>
+    <section id="recipe">
+        <h2>Recipe</h2>
+        <p>1. Add milk, coffee, sugar, and ice cubes to a blender.</p>
+        <p>2. Blend until smooth.</p>
+        <p>3. Pour into a glass and add ice cream.</p>
+    </section>
+
+    <button class="toggleBtn" data-target="contact">Hide Contact</button>
+    <section id="contact">
+        <h2>Contact</h2>
+
+        <p id="errorMsg"></p>
+
+        <form id="contactForm">
+            <label>Your Name:</label>
+            <input type="text" id="name">
+
+            <label>Your Email:</label>
+            <input type="email" id="email">
+
+            <label>Your Message:</label>
+            <textarea id="message"></textarea>
+
+            <input type="submit" value="Send">
+        </form>
+    </section>
+
+    <!-- Dark Mode -->
+    <button id="modeBtn">Dark Mode</button>
+
+</main>
+
+<footer>
+    <p>2026 Cold Coffee Delight</p>
+</footer>
+
+</body>
+</html>
