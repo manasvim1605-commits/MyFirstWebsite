@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Menu – Mavén Bistro 🍽️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Home 🏠</a>
+        <a href="about.html">About 💕</a>
+        <a href="services.html">Menu 🍽️</a>
+        <a href="contact.html">Contact 📩</a>
+        <a onclick="openBasket()">Basket 🧺</a>
+    </nav>
+</header>
+
+<h1>Our Menu 🍰✨</h1>
+
+<div class="menu-grid">
+
+    <div class="menu-card">
+        <img src="C:\Users\Manasvi M. Mandhare\Desktop\Task 4\strawberry cake.jpg" alt="Strawberry Cake">
+        <h3>Strawberry Cake 🍓</h3>
+        <p>₹150</p>
+        <button onclick="addToBasket('Strawberry Cake',150)">Add 🧺</button>
+    </div>
+
+    <div class="menu-card">
+        <img src="C:\Users\Manasvi M. Mandhare\Desktop\Task 4\caramel latte.jpg" alt="Caramel Latte">
+        <h3>Caramel Latte ☕</h3>
+        <p>₹120</p>
+        <button onclick="addToBasket('Caramel Latte',120)">Add 🧺</button>
+    </div>
+
+    <div class="menu-card">
+        <img src="C:\Users\Manasvi M. Mandhare\Desktop\Task 4\cheesy pasta.jpg" alt="Cheesy Pasta">
+        <h3>Cheesy Pasta 🍝</h3>
+        <p>₹200</p>
+        <button onclick="addToBasket('Cheesy Pasta',200)">Add 🧺</button>
+    </div>
+
+    <div class="menu-card">
+        <img src="C:\Users\Manasvi M. Mandhare\Desktop\Task 4\mango smoothie.jpg" alt="Mango Smoothie">
+        <h3>Mango Smoothie 🥭</h3>
+        <p>₹130</p>
+        <button onclick="addToBasket('Mango Smoothie',130)">Add 🧺</button>
+    </div>
+
+</div>
+
+<!-- Basket -->
+<div id="basket">
+    <h2>🧺 Your Basket</h2>
+    <div id="basketList"></div>
+    <button onclick="openPayment()">Proceed to Pay 💳</button>
+    <button onclick="closeBasket()">Close</button>
+</div>
+
+<!-- Payment Popup -->
+<div id="paymentPopup">
+    <h2>Choose Payment Method ✨</h2>
+
+    <label><input type="radio" name="paymethod" value="💳 Credit Card"> 💳 Credit Card</label><br><br>
+    <label><input type="radio" name="paymethod" value="📱 UPI"> 📱 UPI</label><br><br>
+    <label><input type="radio" name="paymethod" value="💵 Cash"> 💵 Cash</label><br><br>
+
+    <button onclick="confirmPayment()">Confirm 💖</button>
+    <button onclick="closePayment()">Close</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
