@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact – Mavén Bistro 📩</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Home 🏠</a>
+        <a href="about.html">About 💕</a>
+        <a href="services.html">Menu 🍽️</a>
+        <a href="contact.html">Contact 📩</a>
+        <a onclick="openBasket()">Basket 🧺</a>
+    </nav>
+</header>
+
+<h1>Contact Us 💌</h1>
+
+<form onsubmit="return validateForm()">
+    <div id="errorBox"></div>
+
+    <input id="cname" type="text" placeholder="Your Name 🐰">
+    <input id="cemail" type="text" placeholder="Your Email 🐥">
+    <textarea id="cmsg" placeholder="Your Message 🧸"></textarea>
+
+    <button type="submit">Send Message 💖</button>
+</form>
+
+<!-- Booking Option -->
+<h2>Book a Table 🍽️</h2>
+<form id="bookingForm" onsubmit="return validateBooking()">
+    <div id="bookingErrorBox"></div>
+
+    <input id="bname" type="text" placeholder="Your Name 🐰">
+    <input id="bemail" type="text" placeholder="Your Email 🐥">
+    <input id="bdate" type="date" placeholder="Booking Date 📅">
+    <input id="btime" type="time" placeholder="Booking Time ⏰">
+    <input id="bpeople" type="number" min="1" placeholder="Number of People 👥">
+
+    <button type="submit">Book Now 💖</button>
+</form>
+
+<!-- Basket -->
+<div id="basket">
+    <h2>🧺 Your Basket</h2>
+    <div id="basketList"></div>
+    <button onclick="openPayment()">Proceed to Pay 💳</button>
+    <button onclick="closeBasket()">Close</button>
+</div>
+
+<!-- Payment Popup -->
+<div id="paymentPopup">
+    <h2>Choose Payment Method ✨</h2>
+
+    <!--  Payment selection added -->
+    <label><input type="radio" name="paymethod" value="💳 Credit Card"> 💳 Credit Card</label><br><br>
+    <label><input type="radio" name="paymethod" value="📱 UPI"> 📱 UPI</label><br><br>
+    <label><input type="radio" name="paymethod" value="💵 Cash"> 💵 Cash</label><br><br>
+
+    <!--  New confirm button with cute popup -->
+    <button onclick="confirmPayment()">Confirm 💖</button>
+    <button onclick="closePayment()">Close</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
