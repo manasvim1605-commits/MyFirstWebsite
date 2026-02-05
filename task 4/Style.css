@@ -1,0 +1,184 @@
+/* Import Cute Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&display=swap');
+
+:root {
+    --beige: #FFF7EC;
+    --caramel: #F6E5D1;
+    --coffee: #A47551;
+    --dustyrose: #D49A9C;
+    --pink: #F6DCEB;
+    --shadow: rgba(0,0,0,0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Baloo 2", sans-serif;
+}
+
+body {
+    background: var(--beige);
+    color: #4a3b34;
+    padding-bottom: 80px;
+}
+
+header {
+    background: var(--caramel);
+    padding: 15px;
+    box-shadow: 0 4px 10px var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 16px;
+    color: #4a3b34;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: var(--pink);
+    transform: scale(1.1);
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin: 20px 0;
+    color: var(--coffee);
+}
+
+section {
+    padding: 20px;
+}
+
+/* Buttons */
+button {
+    background: var(--dustyrose);
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 18px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.07);
+    background: var(--coffee);
+}
+
+/* Menu Items */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.menu-card {
+    background: white;
+    padding: 15px;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px var(--shadow);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+}
+
+.menu-card img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* Basket (Slide-in) */
+#basket {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 320px;
+    height: 100%;
+    background: var(--caramel);
+    padding: 20px;
+    box-shadow: -4px 0 12px var(--shadow);
+    transition: 0.4s;
+    overflow-y: auto;
+    z-index: 9999;
+}
+
+#basket.open {
+    right: 0;
+}
+
+.basket-item {
+    background: white;
+    padding: 10px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+/* Payment Popup */
+#paymentPopup {
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background: var(--beige);
+    width: 350px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 6px 18px var(--shadow);
+    transition: 0.3s;
+    z-index: 10000;
+}
+
+#paymentPopup.show {
+    transform: translate(-50%,-50%) scale(1);
+}
+
+/* Contact Form */
+form {
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px var(--shadow);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border: 2px solid var(--caramel);
+}
+
+.error-bubble {
+    background: #ffcccc;
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #a33;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--caramel);
+    margin-top: 40px;
+}
