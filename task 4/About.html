@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About – Mavén Bistro 💖</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Home 🏠</a>
+        <a href="about.html">About 💕</a>
+        <a href="services.html">Menu 🍽️</a>
+        <a href="contact.html">Contact 📩</a>
+        <a onclick="openBasket()">Basket 🧺</a>
+    </nav>
+</header>
+
+<h1>About Mavén Bistro ✨</h1>
+
+<section>
+<p style="font-size:20px;line-height:1.6;">
+Welcome to <b>Mavén Bistro</b> — a warm cozy café created with a touch of love  
+and a sprinkle of magic ✨  
+Where every plate tells a story, every seat feels like home, and every moment  
+becomes a memory 💖  
+
+Whether you're here for a romantic date 👩‍❤️‍👨, a cute outing with friends 👯‍♀️,  
+or a little family time 🐻👨‍👩‍👧 —  
+we promise comfort, happiness, and the sweetest vibes 🍰☕  
+</p>
+<!--  ADDED IMAGE 1 -->
+<img src="C:\Users\Manasvi M. Mandhare\Desktop\Task 4\Gemini_Generated_Image_v98entv98entv98e.png" style="width:100%;border-radius:20px;margin-top:20px;" alt="">
+
+<!--  ADDED IMAGE 2 -->
+<img src="C:\Users\Manasvi M. Mandhare\Desktop\Task 4\cafe.jpg" style="width:100%;border-radius:20px;margin-top:20px;" alt="">
+</section>
+
+<!-- basket + payment -->
+<div id="basket">
+    <h2>🧺 Your Basket</h2>
+    <div id="basketList"></div>
+    <button onclick="openPayment()">Proceed to Pay 💳</button>
+    <button onclick="closeBasket()">Close</button>
+</div>
+
+<div id="paymentPopup">
+    <h2>Choose Payment Method ✨</h2>
+    <p>💳 Credit Card</p>
+    <p>📱 UPI</p>
+    <p>💵 Cash</p>
+    <button onclick="closePayment()">Close</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
